@@ -1,3 +1,13 @@
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fade-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 html {
   font-size: 100%;
   box-sizing: border-box; }
@@ -43,6 +53,23 @@ button, .button {
   .hide-for-desktop {
     display: none; } }
 
+.header.open .overlay {
+  display: block;
+  animation: fade-in 300ms ease-in-out forwards; }
+.header.open .header_menu > span:first-child {
+  transform: rotate(45deg); }
+.header.open .header_menu > span:nth-child(2) {
+  opacity: 0; }
+.header.open .header_menu > span:last-child {
+  transform: rotate(-45deg); }
+.header .overlay {
+  display: none;
+  position: fixed;
+  top: 3.75rem;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: linear-gradient(#2d314d, transparent); }
 .header nav {
   padding: 1.0625rem 1.5rem; }
 .header__logo img {
@@ -52,9 +79,11 @@ button, .button {
   display: block;
   width: 26px;
   height: 2px;
-  background-color: #2d314d; }
+  background-color: #2d314d;
+  transition: all 300ms ease-in-out;
+  transform-origin: 3px 1px; }
   .header__menu > span:not(:last-child) {
-    margin-bottom: 3px; }
+    margin-bottom: 5px; }
 .header__links a {
   position: relative;
   font-size: 0.875rem;
