@@ -1,33 +1,44 @@
 * {
+  font-family: 'Red Hat Display', sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 100%;
-  box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
+  font-size: $font-medium;
+  box-sizing: border-box; // Saspicious
 }
 
 body {
-  font-family: 'Red Hat Display', sans-serif;
-  font-size: $font-medium;
-  font-weight: 300;
-  background-color: grey;
-}
-
-.card {
+  font-weight: 300; // Saspicious
+  background-color: $paleBlue;
+  background-image: url(../../images/pattern-background-mobile.svg); //TODO Doesn't seem to do anything...
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 28.5rem;
-  background-color: white;
+  min-height: 100vh;
 }
 
-img {//TODO delete this
-  border-style: solid;
-  border-color: red;
+.card_container {
+  max-width: 350px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.header {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-image: url(../../images/illustration-hero.svg);
+}
+
+.card_text {
+  padding: 1.5rem;
+}
+
+.summary {
+    margin-bottom: 1.2rem;
 }
 
 h1, h2 {
@@ -38,13 +49,13 @@ p {
   color: $desaturatedBlue;
 }
 
-.summary_text {
+.summary {
   border-style: solid; //TODO delete this
   border-color: red; //TODO delete this
   text-align: center;
 }
 
-.plan {
+.change_plan {
   display: flex;
   justify-content: space-around;
   border-style: solid; //TODO delete this
@@ -54,10 +65,6 @@ p {
     border-style: solid;
     border-color: red;
   }
-
-  .lel {
-    display: flex;
-  }
 }
 
 .card_buttons {
@@ -66,5 +73,15 @@ p {
 
   button {
     display: block;
+    width: 100%;
+    background-color: $brightBlue;
+    color: white;
+    border:none;
+    cursor: pointer;
+  }
+
+  a {
+    display: block;
+    text-align: center;
   }
 }
