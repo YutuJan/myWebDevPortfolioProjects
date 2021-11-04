@@ -1,4 +1,6 @@
-html {
+* {
+  margin: 0;
+  padding: 0;
   font-size: 100%;
   box-sizing: border-box;
 }
@@ -8,9 +10,61 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Red Hat Display', sans-serif;
   font-size: $font-medium;
   font-weight: 300;
+  background-color: grey;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 28.5rem;
+  background-color: white;
+}
+
+img {//TODO delete this
+  border-style: solid;
+  border-color: red;
+}
+
+h1, h2 {
+  color: $darkBlue;
+}
+
+p {
+  color: $desaturatedBlue;
+}
+
+.summary_text {
+  border-style: solid; //TODO delete this
+  border-color: red; //TODO delete this
+  text-align: center;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-around;
+  border-style: solid; //TODO delete this
+  border-color: red; //TODO delete this
+
+  &_text { //TODO delete this
+    border-style: solid;
+    border-color: red;
+  }
+
+  .lel {
+    display: flex;
+  }
+}
+
+.card_buttons {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    display: block;
+  }
 }
