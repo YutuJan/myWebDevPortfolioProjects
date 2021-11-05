@@ -3,10 +3,10 @@
   margin: 0;
   padding: 0;
   font-size: 1rem;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-align: center; }
 
 body {
-  font-weight: 300;
   background-color: #e0e8ff;
   background-image: url(../../images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
@@ -35,38 +35,59 @@ body {
 .summary {
   margin-bottom: 1.2rem; }
 
-h1, h2 {
+h1 {
+  margin: 30px 0 15px 0;
+  color: #1f2f56; }
+
+h2 {
   color: #1f2f56; }
 
 p {
   color: #7280a7; }
 
-.summary {
-  border-style: solid;
-  border-color: red;
-  text-align: center; }
-
 .change_plan {
   display: flex;
-  justify-content: space-around;
-  border-style: solid;
-  border-color: red; }
-  .change_plan_text {
-    border-style: solid;
-    border-color: red; }
+  justify-content: space-around; }
 
-.card_buttons {
-  display: flex;
-  flex-direction: column; }
-  .card_buttons button {
-    display: block;
-    width: 100%;
-    background-color: #3829e0;
-    color: white;
-    border: none;
-    cursor: pointer; }
-  .card_buttons a {
-    display: block;
-    text-align: center; }
+.change_link {
+  align-self: center;
+  right: 10px;
+  color: #3829e0; }
+
+.change_link:hover {
+  text-decoration: none;
+  opacity: 0.7;
+  transition: 0.3s; }
+
+.proceed_button {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0.7rem;
+  color: white;
+  background-color: #3829e0;
+  border-radius: 1rem;
+  box-shadow: 0px 6px 25px -4px #3829e0; }
+
+.proceed_button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s; }
+
+.cancel_link {
+  margin-left: 6.5rem;
+  text-decoration: none;
+  color: #7280a7; }
+
+.cancel_link:hover {
+  cursor: pointer;
+  color: #1f2f56; }
+
+@media screen and (min-width: 376px) {
+  .grid_container {
+    margin: auto; } }
+@media screen and (min-width: 425px) {
+  body {
+    background-image: url(../../images/pattern-background-desktop.svg); } }
 
 /*# sourceMappingURL=style.css.map */
