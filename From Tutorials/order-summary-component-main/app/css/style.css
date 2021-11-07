@@ -13,6 +13,8 @@ body {
   background-position: center;
   background-size: cover;
   display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh; }
 
 .card_container {
@@ -37,10 +39,12 @@ body {
 
 h1 {
   margin: 30px 0 15px 0;
-  color: #1f2f56; }
+  color: #1f2f56;
+  font-weight: 900; }
 
 h2 {
-  color: #1f2f56; }
+  color: #1f2f56;
+  font-weight: 900; }
 
 p {
   color: #7280a7; }
