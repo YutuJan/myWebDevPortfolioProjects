@@ -1,0 +1,20 @@
+* {
+  font-family: 'Inter', sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 0.938rem;
+  box-sizing: border-box;
+  text-align: center; }
+
+body {
+  background-color: #090b1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+
+.text {
+  background-color: #1b1938; }
+
+/*# sourceMappingURL=style.css.map */
