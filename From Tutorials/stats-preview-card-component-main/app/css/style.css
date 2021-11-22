@@ -3,58 +3,96 @@
   margin: 0;
   padding: 0;
   font-size: 15px;
-  box-sizing: border-box;
-  text-align: center; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
 
 body {
   background-color: #090b1a;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
 
 .grid_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #1b1938;
   color: white;
   width: 80%;
-  margin: 15% auto; }
+  margin: 15% auto;
+}
 
 .image-for-mobile {
   width: 100%;
-  opacity: 0.4; }
+  opacity: 0.4;
+}
 
 .image-for-desktop {
-  display: none; }
+  display: none;
+}
 
 h1 {
   font-weight: 700;
   font-size: 2rem;
   font-family: 'Lexend Deca', sans-serif;
-  padding: 2rem; }
+  padding: 2rem;
+}
 
 .text_details {
   padding-left: 4rem;
-  padding-right: 4rem; }
+  padding-right: 4rem;
+}
 
 .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 3rem;
-  justify-content: space-between; }
-  .stats_name {
-    padding-bottom: 1.5rem; }
-    .stats_name h2 {
-      font-weight: 700;
-      font-size: 1.5rem; }
-    .stats_name p {
-      text-transform: uppercase; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stats_name {
+  padding-bottom: 1.5rem;
+}
+
+.stats_name h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.stats_name p {
+  text-transform: uppercase;
+}
 
 @media screen and (min-width: 375px) {
   .grid_container {
-    flex-direction: row-reverse; }
-
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
   .stats {
-    flex-direction: row; } }
-
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 /*# sourceMappingURL=style.css.map */
