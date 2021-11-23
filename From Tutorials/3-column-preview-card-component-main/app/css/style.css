@@ -2,18 +2,24 @@
   font-family: "Lexend Deca", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  color: $veryLightGray;
+  color: #f2f2f2;
 }
 
 .grid_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 20% 10%;
-  font-size: $font-size;
+  font-size: 15px;
   border-radius: 15px;
 }
 
@@ -30,54 +36,54 @@ img {
 
 button {
   margin-bottom: 10%;
-  background-color: $veryLightGray;
-  border: medium solid $veryLightGray;
+  background-color: #f2f2f2;
+  border: medium solid #f2f2f2;
 }
 
 .sedans {
-  background-color: $brightOrange;
+  background-color: #e38826;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
 
-  button {
-    color: $brightOrange;
-  }
+.sedans button {
+  color: #e38826;
+}
 
-  button:hover {
-    background-color: $brightOrange;
-    cursor: pointer;
-    color: $veryLightGray;
-  }
+.sedans button:hover {
+  background-color: #e38826;
+  cursor: pointer;
+  color: #f2f2f2;
 }
 
 .suvs {
-  background-color: $darkCyan;
+  background-color: #006970;
+}
 
-  button {
-    color: $darkCyan;
-  }
+.suvs button {
+  color: #006970;
+}
 
-  button:hover {
-    background-color: $darkCyan;
-    cursor: pointer;
-    color: $veryLightGray;
-  }
+.suvs button:hover {
+  background-color: #006970;
+  cursor: pointer;
+  color: #f2f2f2;
 }
 
 .luxury {
-  background-color: $veryDarkCyan;
+  background-color: #004241;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+}
 
-  button {
-    color: $veryDarkCyan;
-  }
+.luxury button {
+  color: #004241;
+}
 
-  button:hover {
-    background-color: $veryDarkCyan;
-    cursor: pointer;
-    color: $veryLightGray;
-  }
+.luxury button:hover {
+  background-color: #004241;
+  cursor: pointer;
+  color: #f2f2f2;
 }
 
 h1 {
@@ -102,15 +108,17 @@ button {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 0px;
   }
-
   .luxury {
     border-top-left-radius: 0px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 15px;
   }
-
   .grid_container {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
+/*# sourceMappingURL=style.css.map */
