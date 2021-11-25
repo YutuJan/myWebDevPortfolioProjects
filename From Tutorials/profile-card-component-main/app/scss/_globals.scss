@@ -1,0 +1,75 @@
+* {
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $darkCyan;
+  background-image: url(../../images/bg-pattern-top.svg),
+    url(../../images/bg-pattern-bottom.svg);
+  //background-position: top, bottom;
+}
+
+.grid_container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 25% 10%;
+  border-radius: 1rem;
+  font-size: $font-size;
+
+  color: $darkGrayishBlue;
+  font-weight: 400;
+}
+
+img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 30%;
+}
+
+.info_container {
+  .personal_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .stats_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    border-top: solid;
+    border-color: $darkGrayishBlue;
+    border-width: 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.personal_info {
+  .name {
+    color: $veryDarkDesaturatedBlue;
+    font-weight: 700;
+
+    span {
+      color: $darkGray;
+    }
+  }
+}
+
+.stats {
+  color: $veryDarkDesaturatedBlue;
+  font-weight: 700;
+}
+
+.attribution {
+  text-align: center;
+  margin-bottom: 0%;
+}
